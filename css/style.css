@@ -112,6 +112,9 @@ ul.social li{
 
 /*============= COLUMN CONTENT =============*/
 
+.fa-square{
+  opacity: .05;
+}
 
 
 /*===== FIXED BACKGROUND IMG =====*/
@@ -124,36 +127,96 @@ ul.social li{
   height: 100vh; /*-- remove --*/
 }
 .fixed {
-  background-image: url('../img/imac.jpg');
+  background-image: url('../img/computer-laptop-work-place-camera-705164.jpeg');
   position: fixed;
 }
 
 
 /*============= FOOTER =============*/
 
+footer{
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+}
 
+footer img{
+  height: 3.5rem;
+  margin: 1.5rem auto;
+}
+
+footer a,
+.socket a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover,
+.socket a:hover{
+  color: white;
+  text-decoration: none;
+}
 
 /*============= SOCKET =============*/
 
-
+.socket{
+  background-color: #222222;
+  border-top: .1rem solid gray;
+}
 
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
+  .carousel-caption h3{
+    font-size: 1.8rem;
+  }
 
 }
 /* Devices under 992px (xl) */
 @media (max-width: 991.98px) {
-
+  p.lead{
+    font-size: 1.2rem;
+  }
+  .carousel-indicators li{
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
 }
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
-
+  p.lead{
+    font-size: 1.1rem;
+  }
+  .navbar-brand img{
+    height: 2.5rem;
+  }
+  .navbar{
+    font-size: 1rem;
+    padding: .4rem .6rem;
+  }
+  .navbar-toggler{
+    transform: scale(.9);
+  }
+  .jumbotron .svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 0 .8rem;
+  }
 }
 /* Devices under 576px (sm) */
 @media (max-width: 575.98px) {
-
+  .navbar-brand img{
+    height: 2.3rem;
+  }
+  .navbar{
+    font-size: .9rem;
+    padding: .3rem .6rem;
+  }
+  .jumbotron .svg-inline--fa{
+    font-size: 1.4rem;
+    margin: 0 .5rem;
+  }
 }
 
 
